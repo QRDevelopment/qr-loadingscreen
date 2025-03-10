@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Development Loading Screen</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="video-container">
+        <video id="backgroundVideo" autoplay muted loop playsinline>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+    </div>
+
+    <div class="content">
+        <div class="center-content">
+            <div class="logo-container">
+                <img src="logo.png" alt="QR Development" class="logo">
+            </div>
+            
+            <div class="loading-section">
+                <div class="loading-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="loading-text">
+                    <span class="loading-tip">Welcome to QR Development...</span>
+                </div>
+                <div class="loading-percentage">Loading: <span id="progress-number">0</span>%</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
